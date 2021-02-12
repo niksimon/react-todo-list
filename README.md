@@ -1,4 +1,4 @@
-# Simple React Todo-List
+# React Todo-List
 
 ![Alt text](./readme_img.png?raw=true "Title")
 
