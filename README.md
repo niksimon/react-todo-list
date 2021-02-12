@@ -2,7 +2,7 @@
 
 ![Alt text](./readme_img.png?raw=true "Title")
 
-Design by [briancodes](https://github.com/briancodex)
+Design by [briancodex](https://github.com/briancodex)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
