@@ -13,11 +13,11 @@ function TodoList() {
     setTodos(newTodos);
   };
 
-  const updateTodo = (id, newValue) => {
-    if (!newValue.text || /^\s*$/.test(newValue.text)) {
+  const updateTodo = (id, newTodo) => {
+    if (!newTodo.text || /^\s*$/.test(newTodo.text)) {
       return;
     }
-    setTodos((prev) => prev.map((todo) => (todo.id === id ? newValue : todo)));
+    setTodos((prev) => prev.map((todo) => (todo.id === id ? { ...todo, text: newTodo.text } : todo)));
   };
 
   const completeTodo = (id) => {
@@ -34,6 +34,8 @@ function TodoList() {
     const updatedTodos = todos.filter((todo) => todo.id !== id);
     setTodos(updatedTodos);
   };
+
+  console.log(todos);
 
   return (
     <div>
